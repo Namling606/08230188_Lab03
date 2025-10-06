@@ -1,0 +1,161 @@
+/* ---------- Global Reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* ---------- Base Styling ---------- */
+body {
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* ---------- Navigation Bar ---------- */
+nav {
+  background: #222;
+  padding: 15px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* responsive */
+}
+
+nav ul li {
+  margin: 5px 15px;
+}
+
+nav ul li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00bcd4;
+}
+
+/* ---------- Sections ---------- */
+section {
+  padding: 60px 20px;
+  text-align: center;
+  min-height: 80vh;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1em;
+}
+
+/* ---------- Backgrounds ---------- */
+body.about {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+body.education {
+  background: linear-gradient(to right, #232526, #414345);
+}
+body.skills {
+  background: linear-gradient(to right, #373b44, #4286f4);
+}
+body.projects {
+  background: linear-gradient(to right, #141e30, #243b55);
+}
+body.contact {
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+}
+
+/* ---------- Skills List ---------- */
+.skill-list {
+  list-style: none;
+  padding: 20px;
+  font-size: 1.2em;
+}
+.skill-list li {
+  margin: 10px 0;
+}
+
+/* ---------- Projects List ---------- */
+.project-list {
+  list-style: none;
+  padding: 20px;
+  font-size: 1.2em;
+}
+.project-list li {
+  margin: 10px 0;
+}
+
+/* ---------- Contact Info ---------- */
+.contact-info a {
+  display: block;
+  margin: 10px 0;
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+.contact-info a:hover {
+  color: #00bcd4;
+}
+
+/* ---------- Media Query for Responsiveness ---------- */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column; /* stack links vertically */
+  }
+  section {
+    padding: 40px 10px;
+  }
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.profile-pic img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #00bcd4;
+  object-fit: cover;
+}
+
+/* On smaller screens */
+@media (max-width: 768px) {
+  .profile-pic img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-pic img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Alignment*/
+#education {
+  text-align: left; /* Align all content to the left */
+  max-width: 800px; /* Optional: limits width for better readability */
+  margin: 0 auto;   /* Center the section horizontally */
+  padding: 40px 20px;
+}
+
+.edu-item {
+  margin-bottom: 20px; /* Adds space between items */
+  line-height: 1.6;    /* Improves readability */
+}
+
+
